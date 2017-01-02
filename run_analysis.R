@@ -1,5 +1,7 @@
 install.packages("plyr")
 library("plyr")
+install.packages("reshape2")
+library("reshape2")
 
 ## Download Zip Data
 fileName <- "get_data.zip"
