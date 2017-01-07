@@ -1,0 +1,32 @@
+# **Getting and Cleaning Data Code Book**
+
+### Extract Labels and Features
+
+  1. Activity_Labels - reads information from the activity_labelts.txt file.
+  2. Features - reads information from the features.txt file.
+
+### Extract Mean and Standard Deviation
+
+  1. Features_M_SD - reads the mean and standard deviation from the created Features variable.
+  2. Features_M_SD_Names - reads the naming convention associated with the means and standard deviations collected from the Features_M_SD variable.
+
+### Extract Data
+
+  1. Train - reads information from the X_tran_txt file.
+  2. Train_Activities - reads information from the Y_test.txt file.
+  3. Train_Subjects - reads the information from the subject_test.txt file.
+  4. Final_Train - combines the the columns of Train_Subjects, Train_Activities and Train variables.
+  5. Test - reads information from X_test.txt file.
+  6. Test_Activities - reads information from Y_test.txt file.
+  6. Test_Subjects - reads information from the subject_test.txt file.
+  8. Final_Test - combines the columns of Test_Subjects, Test_Activities and Test variables.
+
+### Merge Labels and Data
+
+  1. Final_Data - combines the rows of Final_Train and Final_test.
+
+### Data Melt
+
+  1. Final_Data_Melt - reproduces the data extract data pertinent to columns "Subject" and "Activity".
+  2. Final_Data_Mean - calculates the mean corresponding between "Subject" and "Activity".
+  
